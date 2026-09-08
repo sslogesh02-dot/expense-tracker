@@ -304,7 +304,7 @@
       <div class="detail-header">
         <button class="btn-back" onclick="showHome()">← Back</button>
         <div>
-          <h3 id="detailMemberName" style="font-size: 1.1rem;">Person A</h3>
+          <h3 id="detailMemberName" style="font-size: 1.1rem;">Suresh</h3>
           <div id="detailMemberTotal" style="font-size: 0.85rem; color: var(--text-muted);">Total: ₹0.00</div>
         </div>
       </div>
@@ -324,11 +324,11 @@
         <div class="form-group">
           <label>Who spent?</label>
           <select id="memberSelect" required>
-            <option value="Person A">Person A</option>
-            <option value="Person B">Person B</option>
-            <option value="Person C">Person C</option>
-            <option value="Person D">Person D</option>
-            <option value="Person E">Person E</option>
+            <option value="Suresh">Suresh</option>
+            <option value="Aravinth">Aravinth</option>
+            <option value="Thiyagu">Thiyagu</option>
+            <option value="Elavarasan">Elavarasan</option>
+            <option value="Logesh">Logesh</option>
           </select>
         </div>
         <div class="form-group" style="margin-top: 10px;">
@@ -347,7 +347,7 @@
   </div>
 
   <script>
-    const MEMBERS = ['Person A', 'Person B', 'Person C', 'Person D', 'Person E'];
+    const MEMBERS = ['Suresh', 'Aravinth', 'Thiyagu', 'Elavarasan', 'Logesh'];
     let expenses = JSON.parse(localStorage.getItem('expenses_data')) || [];
     let currentDetailMember = null;
 
