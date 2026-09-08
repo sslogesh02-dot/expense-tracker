@@ -126,23 +126,9 @@
       transform: scale(0.99);
     }
 
-    .person-avatar {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: #eff6ff;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin-right: 12px;
-    }
-
     .person-info {
       display: flex;
-      align-items: center;
+      flex-direction: column;
       flex: 1;
     }
 
@@ -380,11 +366,8 @@
         card.onclick = () => showDetail(member);
         card.innerHTML = `
           <div class="person-info">
-            <div class="person-avatar">${member.replace('Person ', '')}</div>
-            <div>
-              <div class="person-name">${member}</div>
-              <div class="person-sub">${memExpenses.length} transaction${memExpenses.length === 1 ? '' : 's'}</div>
-            </div>
+            <div class="person-name">${member}</div>
+            <div class="person-sub">${memExpenses.length} transaction${memExpenses.length === 1 ? '' : 's'}</div>
           </div>
           <div class="person-total">${formatINR(total)}</div>
         `;
